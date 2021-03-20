@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
+        "start": "npm run dev:ssr",
         "build": "ng build",
         "test": "jest",
         "lint": "ng lint",
@@ -35,6 +35,7 @@
         "@angular/router": "~11.2.5",
         "@nguniversal/express-engine": "^11.2.1",
         "express": "^4.15.2",
+        "modern-css-reset": "^1.4.0",
         "rxjs": "~6.6.0",
         "tslib": "^2.0.0",
         "zone.js": "~0.11.3"
