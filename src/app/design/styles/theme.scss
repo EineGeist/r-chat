@@ -1,0 +1,36 @@
+@use 'sass:color';
+@use 'sass:map';
+
+$colors: (
+    background: #000000,
+    surface1: #1e1e1e,
+    surface2: #262626,
+    surface3: #2d2d2d,
+    surface4: #353535,
+    surface5: #3a3a3a,
+    primary: #7fd7ff,
+    primary-variant: #00adfc,
+    secondary: #ffa87f,
+    error: #ff7f88,
+
+    on-background: #ffffff,
+    on-surface: #ffffff,
+    on-primary: #000000,
+);
+
+$elevation: (
+    0: 0,
+    1: 2px,
+    2: 4px,
+    3: 6px,
+    4: 8px,
+    5: 10px,
+);
+
+@function get-color($color, $opacity: 1) {
+    @return rgba(map.get($colors, $color), $opacity);
+}
+
+@function get-elevation($level: 1) {
+    @return 0 2px map.get($elevation, $level) #000000,
+}
