@@ -1,0 +1,21 @@
+@use 'src/app/design/styles/theme';
+
+:host {
+    display: block;
+    color: theme.get-color(on-surface);
+    border-radius: 12px;
+    padding: 20px;
+
+    --surface1: #{theme.get-color(surface1)};
+    --surface2: #{theme.get-color(surface2)};
+    --surface3: #{theme.get-color(surface3)};
+    --surface4: #{theme.get-color(surface4)};
+    --surface5: #{theme.get-color(surface5)};
+
+    --elevation0: #{theme.get-elevation(0)};
+    --elevation1: #{theme.get-elevation(1)};
+    --elevation2: #{theme.get-elevation(2)};
+    --elevation3: #{theme.get-elevation(3)};
+    --elevation4: #{theme.get-elevation(4)};
+    --elevation5: #{theme.get-elevation(5)};
+}
