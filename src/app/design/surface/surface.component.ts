@@ -9,6 +9,7 @@ import {
     Self,
     SkipSelf,
 } from '@angular/core';
+
 import { DesignContext, DESIGN_CONTEXT } from '@design/design-context.provider';
 
 @Component({
@@ -16,7 +17,7 @@ import { DesignContext, DESIGN_CONTEXT } from '@design/design-context.provider';
     templateUrl: './surface.component.html',
     styleUrls: ['./surface.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    providers: [{ provide: DESIGN_CONTEXT, useFactory: () => ({ level: 0 })}],
+    providers: [{ provide: DESIGN_CONTEXT, useFactory: () => ({ level: 0 }) }],
 })
 export class SurfaceComponent implements OnInit {
     @Input()
@@ -31,12 +32,12 @@ export class SurfaceComponent implements OnInit {
 
     @HostBinding('style.background-color')
     public get surface(): string {
-        return `var(--surface${this.level})`;
+        return `var(--surface${this.level}-color)`;
     }
 
     @HostBinding('style.filter')
     public get shadow(): string {
-        return `drop-shadow(var(--elevation${this.elevation}))`;
+        return `drop-shadow(var(--surface${this.elevation}-shadow))`;
     }
 
     public parentDesignContext: DesignContext;
@@ -45,15 +46,14 @@ export class SurfaceComponent implements OnInit {
         return +this.level - this.parentDesignContext.level;
     }
 
-    #level: number | string = 1;
+    #level!: number | string;
 
     constructor(
         @Inject(DESIGN_CONTEXT)
         @Self()
         public designContext: DesignContext,
         @Inject(DESIGN_CONTEXT)
-        @SkipSelf()
-        @Optional()
+        @SkipSelf() @Optional()
         parentDesignContext: DesignContext | null,
     ) {
         this.parentDesignContext = parentDesignContext || {
@@ -62,6 +62,6 @@ export class SurfaceComponent implements OnInit {
     }
 
     public ngOnInit(): void {
-        this.level ??= 1;
+        this.level ||= 0;
     }
 }
