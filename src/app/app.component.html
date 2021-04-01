@@ -1,37 +1,71 @@
-<app-surface level="1" appDesignRoot>
-    <app-surface level="2">
-        <app-surface level="3">
-            <app-surface level="4">
-                <app-surface level="5">
+<app-surface appDesignRoot>
+    <app-surface>
+        <app-surface>
+            <app-surface>
+                <app-surface>
                     Hello world
                 </app-surface>
             </app-surface>
         </app-surface>
         <br>
-        <app-surface level="3">
-            <app-surface level="4">
-                <app-surface level="5">
+        <app-surface>
+            <app-surface>
+                <app-surface>
                     Hello world
                 </app-surface>
                 <br>
-                <app-surface level="5">
+                <app-surface>
                     Hello world
                 </app-surface>
             </app-surface>
             <br>
-            <app-surface level="4">
-                <app-surface level="5">
+            <app-surface>
+                <app-surface>
                     Hello world
                 </app-surface>
                 <br>
-                <app-surface level="5">
+                <app-surface>
                     Hello world
                 </app-surface>
             </app-surface>
         </app-surface>
     </app-surface>
     <br>
-    <app-surface level="5">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+        <app-surface [upliftOnHoverBy]="2" style="cursor: pointer;">
+            <h3 style="text-align: center;">Item 1</h3>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consequuntur consectetur distinctio natus ut fuga
+            voluptate omnis ea, alias ratione obcaecati, ad, inventore aperiam tempora? Tempore voluptates sit dicta explicabo.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dignissimos cupiditate placeat. Esse aliquid
+            doloremque, necessitatibus labore rem fugiat maxime ipsum nostrum consequatur dolor blanditiis ab, cum omnis, doloribus ipsam?
+        </app-surface>
+        <app-surface [upliftOnHoverBy]="2" style="cursor: pointer;">
+            <h3 style="text-align: center;">Item 2</h3>
+            <br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis expedita ipsam adipisci saepe itaque
+            consequatur ex omnis. Cumque aliquid laudantium culpa deleniti architecto nostrum, error, nam saepe ea in ad.
+            <br><br>
+            <app-surface>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio et, facilis numquam ipsa repellendus
+                error nemo porro pariatur nostrum! Laboriosam officia inventore eius consequuntur doloribus natus vel, quibusdam eos beatae.
+            </app-surface>
+        </app-surface>
+        <app-surface [upliftOnHoverBy]="2" style="cursor: pointer;">
+            <h3 style="text-align: center;">Item 3</h3>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus consequatur aperiam,
+            commodi repellendus esse sint optio cum illum? Debitis ab corporis maiores, nam expedita fugit quos architecto vitae maxime.
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repudiandae autem, ab amet laboriosam
+            odio quos quaerat delectus possimus nobis dignissimos enim! Adipisci iste velit corrupti voluptatum quo repudiandae ut.
+        </app-surface>
+    </div>
+    <br>
+    <app-surface>
         Hello world
     </app-surface>
 </app-surface>

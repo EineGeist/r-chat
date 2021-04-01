@@ -3,4 +3,8 @@
     color: var(--color-on-surface);
     border-radius: 12px;
     padding: 20px;
+
+    transition:
+        background-color 0.35s ease-out,
+        filter 0.35s ease-out;
 }
