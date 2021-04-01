@@ -37,27 +37,27 @@ import { Design, DESIGN } from './root/design.provider';
                         surfaces: {
                             0: {
                                 color: '#000000',
-                                shadow: '0 2px 2px #000000',
+                                shadow: 'none',
                             },
                             1: {
                                 color: '#1e1e1e',
-                                shadow: '0 2px 4px #000000',
+                                shadow: '0 2px 2px #000000',
                             },
                             2: {
                                 color: '#262626',
-                                shadow: '0 2px 6px #000000',
+                                shadow: '0 4px 3px #000000',
                             },
                             3: {
                                 color: '#2d2d2d',
-                                shadow: '0 2px 8px #000000',
+                                shadow: '0 6px 4px #000000',
                             },
                             4: {
                                 color: '#353535',
-                                shadow: '0 2px 10px #000000',
+                                shadow: '0 8px 5px #000000',
                             },
                             5: {
                                 color: '#3a3a3a',
-                                shadow: '0 2px 12px #000000',
+                                shadow: '0 10px 6px #000000',
                             },
                         },
                     },
