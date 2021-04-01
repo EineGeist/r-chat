@@ -25,7 +25,7 @@ import { map, shareReplay } from 'rxjs/operators';
 import { DesignContext, DESIGN_CONTEXT } from '@design/design-context.provider';
 
 @Component({
-    selector: 'app-surface',
+    selector: 'des-surface',
     templateUrl: './surface.component.html',
     styleUrls: ['./surface.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
