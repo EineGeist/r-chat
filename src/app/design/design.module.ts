@@ -5,15 +5,18 @@ import { BehaviorSubject } from 'rxjs';
 import { SurfaceComponent } from './surface/surface.component';
 import { DesignRootDirective } from './root/design-root.directive';
 import { Design, DESIGN } from './root/design.provider';
+import { BackgroundComponent } from './background/background.component';
 
 @NgModule({
     declarations: [
         SurfaceComponent,
         DesignRootDirective,
+        BackgroundComponent,
     ],
     exports: [
         SurfaceComponent,
         DesignRootDirective,
+        BackgroundComponent,
     ],
     imports: [
         CommonModule,
