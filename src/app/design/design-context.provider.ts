@@ -1,7 +1,8 @@
 import { InjectionToken } from '@angular/core';
+import { Observable } from 'rxjs';
 
 export interface DesignContext {
-    level: number;
+    level$: Observable<number>;
 }
 
 export const DESIGN_CONTEXT = new InjectionToken<DesignContext>('Design context');

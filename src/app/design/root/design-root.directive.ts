@@ -13,7 +13,7 @@ import { Design, DESIGN } from './design.provider';
 type CssVariables = { [variable: string]: string };
 
 @Directive({
-    selector: '[appDesignRoot]',
+    selector: '[desRoot]',
 })
 export class DesignRootDirective implements OnDestroy {
     @HostBinding('style')
