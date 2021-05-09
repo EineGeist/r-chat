@@ -4,6 +4,15 @@
 
 export const environment = {
     production: false,
+    firebase: {
+        apiKey: 'AIzaSyDvXZHi4jciWdRK3H_r_kxAw-259Amw2BY',
+        authDomain: 'r-chat-dev.firebaseapp.com',
+        databaseURL: 'https://r-chat-dev-default-rtdb.europe-west1.firebasedatabase.app',
+        projectId: 'r-chat-dev',
+        storageBucket: 'r-chat-dev.appspot.com',
+        messagingSenderId: '426670612923',
+        appId: '1:426670612923:web:3d8f6f964da84c1d74249e',
+    },
 };
 
 /*

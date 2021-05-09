@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "r-chat-dev": {
+      "hosting": {
+        "r-chat": [
+          "r-chat-dev"
+        ]
+      }
+    }
+  }
+}
